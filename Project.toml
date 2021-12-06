@@ -1,0 +1,4 @@
+name = "LibStereoKit"
+uuid = "3c372614-ce37-4749-ae5f-a6d0327edbc0"
+authors = ["ianet <ianet@users.noreply.github.com>"]
+version = "0.1.0"
