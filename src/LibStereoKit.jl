@@ -10,7 +10,7 @@ StereoKitC = joinpath(@__DIR__, "StereoKitC.dll")
 
 function __init__()
     # TODO - make a proper 'artifact'
-    chmod(lib, filemode(lib) | 0o755) # dll needs to executable
+    chmod(StereoKitC, filemode(lib) | 0o755) # dll needs to executable
 end
 
 
