@@ -1,3 +1,6 @@
 [StereoKitC]
 git-tree-sha1 = "61231e53833d046ecb156e07857303edb1c9730c"
 
+    [[StereoKitC.download]]
+    url = "socrates.tar.gz"
+    sha256 = "2fbe898143f2ccb47ef91b8fc591f8d0e758722ac29ff8983e519b9cbb51fae2"
