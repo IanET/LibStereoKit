@@ -4,4 +4,3 @@ git-tree-sha1 = "93907d367040a2a10fbd6c9d4f35fbaf55dce78d"
     [[StereoKitC.download]]
     url = "https://github.com/IanET/LibStereoKitGenerator/blob/94c2080dac48de054a889e036dc9ddf7fce3dd6b/StereoKitC/runtimes/win10-x64.tar.gz"
     sha256 = "db451e1080f52527ef9931e5c1dc3256ce52d07837590c44fb8118db981eaabd"
-
