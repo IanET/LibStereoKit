@@ -3,4 +3,4 @@ git-tree-sha1 = "61231e53833d046ecb156e07857303edb1c9730c"
 
     [[StereoKitC.download]]
     url = "https://github.com/IanET/LibStereoKit/blob/StereoKit-0.3.5/src/StereoKitC.tar.gz"
-    sha256 = "32ff360c298d390c55629cac2eb152e4c274616cd5fcc45b7334e05ba3954f71"
+    sha256 = "2fbe898143f2ccb47ef91b8fc591f8d0e758722ac29ff8983e519b9cbb51fae2"
