@@ -1,6 +1,4 @@
 [[StereoKitC]]
-arch = "x86_64"
-os = "win"
 git-tree-sha1 = "93907d367040a2a10fbd6c9d4f35fbaf55dce78d"
 
     [[StereoKitC.download]]
