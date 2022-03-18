@@ -1,12 +1,13 @@
 module LibStereoKit
 
 using CEnum
+using Pkg.Artifacts
 
 # 
 # Automatically generated file
 #
 
-StereoKitC = joinpath(@__DIR__, "StereoKitC\\runtimes\\win-x64\\native\\StereoKitC.dll")
+StereoKitC = joinpath(artifact"StereoKitC", "StereoKitC\\runtimes\\win-x64\\native\\StereoKitC.dll")
 
 # function __init__()
 #     # TODO - make a proper 'artifact'
