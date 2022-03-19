@@ -3,15 +3,11 @@ module LibStereoKit
 using CEnum
 
 # 
-# Automatically generated file - do not edit
+# Automatically generated file
 #
+using Pkg.Artifacts
 
-const StereoKitC = joinpath(@__DIR__, "StereoKitC.dll")
-
-function __init__()
-    # TODO - make a proper 'artifact'
-    chmod(StereoKitC, filemode(StereoKitC) | 0o755) # dll needs to executable
-end
+StereoKitC = joinpath(artifact"StereoKitC", "win-x64\\native\\StereoKitC.dll")
 
 
 const uint64_t = Culonglong
@@ -2755,13 +2751,5 @@ const SK_VERSION_PRERELEASE = 0
 # Skipping MacroDefinition: SK_DEPRECATED __attribute__ ( ( deprecated ) )
 
 const SK_VERSION_ID = ((uint64_t(SK_VERSION_MAJOR) << 48 | uint64_t(SK_VERSION_MINOR) << 32) | uint64_t(SK_VERSION_PATCH) << 16) | uint64_t(SK_VERSION_PRERELEASE)
-
-# exports
-const PREFIXES = ["sk_"]
-for name in names(@__MODULE__; all=true), prefix in PREFIXES
-    if startswith(string(name), prefix)
-        @eval export $name
-    end
-end
 
 end # module
