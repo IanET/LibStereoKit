@@ -1,7 +1,8 @@
 name = "LibStereoKit"
 uuid = "3c372614-ce37-4749-ae5f-a6d0327edbc0"
 authors = ["ianet <ianet@users.noreply.github.com>"]
-version = "0.1.0"
+version = "0.3.5"
 
 [deps]
 CEnum = "fa961155-64e5-5f13-b03f-caf6b980ea82"
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
