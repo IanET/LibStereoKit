@@ -5,4 +5,5 @@ version = "0.3.6"
 
 [deps]
 CEnum = "fa961155-64e5-5f13-b03f-caf6b980ea82"
+IMisc = "137d3b1c-0fe2-4079-81ca-d2a666b9416a"
 Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
