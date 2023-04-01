@@ -3294,20 +3294,22 @@ Base.:(+)(a::vec3, b::vec3)::vec3 = vec3(a.x+b.x, a.y+b.y, a.z+b.z)
 function sk_renderloop(render::Function)::Void
     render_c = @cfunction($render, Void, ()) # Not supported on all cpu architectures
     if isinteractive()
-        while SK.sk_step(render_c) > 0; sleep(0.01) end
+        while sk_step(render_c) > 0; sleep(0.01) end
     else
-        while SK.sk_step(render_c) > 0; end
+        while sk_step(render_c) > 0; end
     end
 end
+
+# TODO - Is UTF8 OK?
 
 function sk_init(;
     app_name::String = "",
     assets_folder::String = "",
-    display_preference::SK.display_mode_ = SK.display_mode_mixedreality,
-    blend_preference::SK.display_blend_ = SK.display_blend_any_transparent,
+    display_preference::display_mode_ = display_mode_mixedreality,
+    blend_preference::display_blend_ = display_blend_any_transparent,
     no_flatscreen_fallback::Bool = false,
-    depth_mode::SK.depth_mode_ = SK.depth_mode_balanced,
-    log_filter::SK.log_ = SK.log_diagnostic,
+    depth_mode::depth_mode_ = depth_mode_balanced,
+    log_filter::log_ = log_diagnostic,
     overlay_app::Bool = false,
     overlay_priority::Int = 0, 
     flatscreen_pos_x::Int = 0,
