@@ -3318,7 +3318,7 @@ function sk_init(;
     disable_unfocused_sleep::Bool = true)
 
     GC.@preserve app_name assets_folder begin 
-        settings = SK.sk_settings_t(
+        settings = sk_settings_t(
             pointer(app_name),
             pointer(assets_folder),
             display_preference,
@@ -3337,7 +3337,7 @@ function sk_init(;
             C_NULL, 
             C_NULL
         )
-        SK.sk_init(settings)
+        sk_init(settings)
     end
 end
 
